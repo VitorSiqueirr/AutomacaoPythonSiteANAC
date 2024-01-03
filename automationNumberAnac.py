@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 # Caminho para o driver do Chrome
-path_to_chromedriver = './chromedriver.exe' # atualize isso para o caminho do seu chromedriver
+path_to_chromedriver = './chromedriver.exe'
 
 # Inicializa o serviço do WebDriver
 service = Service(path_to_chromedriver)

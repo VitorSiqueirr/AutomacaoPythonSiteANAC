@@ -1,0 +1,37 @@
+Instale o python caso a maquina ainda não estiver com ele
+Aqui o link: https://www.python.org/downloads/
+
+Se quiser verificar se já esta instalado use o comando (Após abrir o PowerShell):
+    python --version 
+Se sair uma resposta assim:
+    Python 3.12.0
+Então você esta com o python instalado, caso tenha baixado e mesmo assim esteja dando este erro feche e abra novamente o PowerShell.
+
+Após conferir isto é so conferir se você esta na pasta correta com o PowerShell, que por padrão irá estar assim:
+    PS C:\Users\vitor>
+Então você precisa encontrar em que pasta você baixou esta automação.
+Vá ate a pasta e clique na parte onde se encontra o caminho da mesma e copie ele, esta copia deve estar mais ou menos assim:
+    C:\Users\vitor\OneDrive\Documentos\GitHub\AutomacaoPythonSiteANAC
+So que em vez da minha pasta do GitHub ele estará apontando para a sua pasta.
+Após isso vá ate o PowerShell e escreva assim:
+    cd C:\Users\vitor\OneDrive\Documentos\GitHub\AutomacaoPythonSiteANAC
+So que utilize o caminho para a sua pasta após o cd.
+Assim você se encontra na pasta correta.
+Agora precisará instalar alguns pacotes para que a mesma funcione corretamente, assim é so dar os seguintes comandos:
+    pip install requests    
+    pip install beautifulsoup4
+    pip install selenium
+    pip install --upgrade selenium
+    pip install pandas openpyxl 
+Caso peça mais algum o que é improvavelmente por favor encaminhe para mim o erro que eu te ajudo.
+Após isso é so rodar as automações nesta ordem, com estes comandos:
+    python .\automationNumberAnac.py
+    python .\automationStudents.py
+Você tem que rodar um de cada vez, a primeira automação do arquivo automationNumberAnac é para pegar todos os códigos da ANAC das escolas.
+A segunda automação, o arquivo automationStudents é utilizada para pegar esses códigos e encontrar os alunos de cada escola e passar 
+as informações que o site providencia para uma planilha denominada dados_alunos.xlsx.
+Este segundo arquivo pode demorar até uns 15 minutos para mais para pegar todas as informações, e infelizmente não tem como melhorar isso,
+tem que deixar ele fazendo o seu trabalho, enquanto isso contanto que você não feche o novo navegador que o mesmo abra bem como o PowerShell
+ele irá completar certinho o trabalho.
+
+Caso não esteja funcionando ou de algum problema pode me mandar mensagem que posso ver se consigo resolver se tiver tempo.

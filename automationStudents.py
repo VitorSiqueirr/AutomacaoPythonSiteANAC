@@ -75,7 +75,5 @@ for i in range(0, len(keys)):
         time.sleep(5)
         pagina += 1
 
-# Fecha o driver
 driver.quit()
-
 df.to_excel('dados_alunos.xlsx', index=False)
